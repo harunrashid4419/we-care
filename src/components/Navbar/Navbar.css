@@ -1,0 +1,13 @@
+.navbar-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar-section .right ul li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar-section .right ul li a{
+    text-decoration: none;
+    padding-right: 25px;
+}
