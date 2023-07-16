@@ -1,0 +1,43 @@
+.main-hospital{
+    display: flex;
+    justify-content: end;
+    margin-top: -55px;
+}
+.hospital-details{
+    background-color: #F5F5F5;
+    width: 70%;
+    text-align: right;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 30px 0;
+    border-radius: 5px;
+}
+.hospital-details .flex-column{
+    text-align: center;
+}
+.hospital-details .flex-column h1{
+    color: #04A6C2;
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0;
+}
+.hospital-details .flex-column p{
+    margin: 0;
+}
+
+@media screen and (max-width: 992px) {
+    .main-hospital{
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 767px) {
+    .hospital-details{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 576px) {
+    .hospital-details{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+}

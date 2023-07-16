@@ -72,3 +72,8 @@ body {
   padding: 0 50px;
   margin: 0 auto;
 }
+@media screen and (max-width: 767px) {
+  .container{
+    padding: 0 30px;
+  }
+}

@@ -1,11 +1,14 @@
 import "./Navbar.css";
+import { FaThLarge } from "react-icons/fa";
 
 const Navbar = () => {
   return (
     <div className="container">
       <div className="navbar-section">
         <div className="left">
-          <h4>WeCare</h4>
+          <h4>
+            <FaThLarge /> WeCare
+          </h4>
         </div>
         <div className="right">
           <ul>
