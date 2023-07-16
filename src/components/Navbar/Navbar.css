@@ -3,6 +3,14 @@
     justify-content: space-between;
     align-items: center;
 }
+.navbar-section .left h4{
+    color: #25A18E;
+    font-size: 22px;
+    cursor: pointer;
+}
+.navbar-section .right ul{
+    padding: 10px 0;
+}
 .navbar-section .right ul li{
     list-style: none;
     display: inline-block;
@@ -10,4 +18,25 @@
 .navbar-section .right ul li a{
     text-decoration: none;
     padding-right: 25px;
+    color: black;
+    transition: .5s;
+}
+.navbar-section .right ul li a:hover{
+    color: #04A6C2;
+}
+.navbar-section .right button{
+    background: #04A6C2;
+    border: none;
+    padding: 13px 25px;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 2px solid #04A6C2;
+    cursor: pointer;
+    transition: .5s;
+}
+.navbar-section .right button:hover{
+    border: 2px solid #04A6C2;
+    background-color: transparent;
+    color: black;
 }
