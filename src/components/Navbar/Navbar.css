@@ -13,7 +13,7 @@
 .navbar-section .left svg{
     margin-right: 5px;
 }
-.navbar-section .right ul{
+.navbar{
     padding: 10px 0;
 }
 .navbar-section .right ul li{
@@ -44,4 +44,47 @@
     border: 2px solid #04A6C2;
     background-color: transparent;
     color: black;
+}
+.menu-icon{
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+@media screen and (max-width: 992px) {
+    .navbar-section .right ul li a{
+        padding-right: 20px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .navbar-section .left h4{
+        margin: 10px 0;
+    }
+    .menu-icon{
+        display: block;
+    }
+    .navbar-section .right ul li {
+        display: block;
+        text-align: right;
+        padding-top: 10px;
+    }
+    .navbar-section .right ul li:first-child {
+        padding-top: 0px;
+    }
+    .navbar-section .right ul li a{
+        padding-right: 0;
+    }
+    #navbar{
+        margin: 0;
+        padding: 30px 50px;
+        background: #F5F5F5;
+        position: absolute;
+        width: 300px;
+        top: 53px;
+        right: -500px;
+        display: none;
+    }
+    #navbar.active{
+        right: 0;
+        display: block;
+    }
 }

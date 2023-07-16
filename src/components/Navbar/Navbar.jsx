@@ -1,7 +1,10 @@
+import { useState } from "react";
 import "./Navbar.css";
-import { FaThLarge } from "react-icons/fa";
+import { FaThLarge, FaBars, FaTimes } from "react-icons/fa";
 
 const Navbar = () => {
+  const [open, setOpen] = useState(false);
+
   return (
     <div className="container">
       <div className="navbar-section">
@@ -11,7 +14,14 @@ const Navbar = () => {
           </h4>
         </div>
         <div className="right">
-          <ul>
+          <div onClick={() => setOpen(!open)}>
+            {open ? (
+              <FaTimes className="menu-icon" />
+            ) : (
+              <FaBars className="menu-icon" />
+            )}
+          </div>
+          <ul id="navbar" className={`${open ? "#navbar active" : "navbar"}`}>
             <li>
               <a href="#">Featured</a>
             </li>
